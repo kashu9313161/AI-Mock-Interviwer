@@ -1,0 +1,39 @@
+:root {
+  --bg: #212121;
+  --bg-2: #2f2f2f;
+  --bg-card: #303030;
+  --border: #3d3d3d;
+  --text: #ececec;
+  --text-muted: #8e8ea0;
+  --text-dim: #565869;
+  --accent: #10a37f;
+  --accent-hover: #0d8a6c;
+  --nav-h: 60px;
+  --radius: 12px;
+  --ff: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--ff);
+  background: var(--bg);
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page { min-height: 100vh; padding-top: var(--nav-h); }
+.container { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.fade-up   { animation: fadeUp 0.4s ease both; }
+.fade-up-2 { animation: fadeUp 0.4s ease 0.08s both; }
+.fade-up-3 { animation: fadeUp 0.4s ease 0.16s both; }
+.fade-up-4 { animation: fadeUp 0.4s ease 0.24s both; }
